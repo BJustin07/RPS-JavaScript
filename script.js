@@ -57,8 +57,8 @@ function playGame(){
     let roundCounter = 1;
     let play = true;
     while(play){
-        if (roundCounter != 5){
-            for (roundCounter = 1; roundCounter <= 5; roundCounter++){
+        if (roundCounter != 3){
+            for (roundCounter = 1; roundCounter <= 3; roundCounter++){
                 console.log(`Round ${roundCounter}`);
                 console.log(`Current score: Human Score: ${humanScore}, Computer Score: ${computerScore}`);
                 getComputerChoice();
@@ -66,7 +66,7 @@ function playGame(){
                 playRound(humanChoice,computerChoice);
             }
         }
-        if (roundCounter === 5){
+        if (roundCounter === 3){
             if(humanScore > computerScore){
                 console.log("Human Wins");
             }
